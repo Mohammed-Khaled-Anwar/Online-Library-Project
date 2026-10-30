@@ -1,115 +1,85 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Borrowed Books - Online Library</title>
+    <meta name="description" content="View and manage your borrowed books.">
+    <title>My Borrowed Books | Online Library</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand">
+                <img src="images/book-logo-template_23-2149676836.avif" alt="Online Library logo">
+                <span>Online Library</span>
+            </a>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Login.html">Logout</a>
+                <a href="Catalogue.html">Browse Books</a>
+                <a href="borrowed_book.html" class="active" aria-current="page">My Borrowed Books</a>
+            </div>
+        </nav>
+    </header>
 
-        <a href="index.html" class="brand">
-            <img src="images/logo.png" alt="Library Logo">
-            <span>Online Library</span>
-        </a>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="Login.html">Logout</a>
-            <a href="Catalogue.html">Browse Books</a>
-            <a href="borrowed_book.html">My Borrowed Books</a>
-            
-        </div>
-
-    </nav>
-
-    <!-- Borrowed Books -->
-    <section class="borrowed-container">
-
-        <div class="borrowed-header">
+    <main class="borrowed-container">
+        <section class="borrowed-header">
+            <p class="eyebrow">YOUR READING LIST</p>
             <h1>My Borrowed Books</h1>
-            <p>Keep track of the books you have borrowed.</p>
-        </div>
+            <p>Keep track of the books you have borrowed and return them when you are finished.</p>
+        </section>
 
-        <div class="borrowed-count">
-            <h3>Currently Borrowed: 3 Books</h3>
-        </div>
+        <section class="borrowed-count" aria-label="Borrowed books summary">
+            <div>
+                <span class="count-label">CURRENTLY BORROWED</span>
+                <strong>3 Books</strong>
+            </div>
+            <a href="Catalogue.html" class="browse-link">Browse more books</a>
+        </section>
 
-        <div class="borrowed-grid">
-
-            <!-- Book 1 -->
-            <div class="borrowed-card">
-
-                <img src="images/book1.jpg" alt="Book Cover">
-
+        <section class="borrowed-grid" aria-label="Your borrowed books">
+            <article class="borrowed-card">
+                <div class="borrowed-cover cover-blue" aria-hidden="true"><span>THE<br>GREAT<br>GATSBY</span></div>
                 <div class="borrowed-info">
+                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Fiction</span></div>
                     <h2>The Great Gatsby</h2>
-                    <p>Author: F. Scott Fitzgerald</p>
-                    <p>Category: Fiction</p>
-                    <p>Borrow Date: 20 Oct 2026</p>
-                    <p>Due Date: 05 Nov 2026</p>
-
-                    <span class="book-status">Borrowed</span>
-
-                    <button class="return-button">Return Book</button>
+                    <p class="author">F. Scott Fitzgerald</p>
+                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>20 Oct 2026</dd></div><div><dt>Due date</dt><dd>05 Nov 2026</dd></div></dl>
+                    <button type="button" class="return-button">Return book</button>
                 </div>
+            </article>
 
-            </div>
-
-            <!-- Book 2 -->
-            <div class="borrowed-card">
-
-                <img src="images/book2.jpg" alt="Book Cover">
-
+            <article class="borrowed-card">
+                <div class="borrowed-cover cover-gold" aria-hidden="true"><span>ATOMIC<br>HABITS</span></div>
                 <div class="borrowed-info">
+                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Self-development</span></div>
                     <h2>Atomic Habits</h2>
-                    <p>Author: James Clear</p>
-                    <p>Category: Self Development</p>
-                    <p>Borrow Date: 22 Oct 2026</p>
-                    <p>Due Date: 07 Nov 2026</p>
-
-                    <span class="book-status">Borrowed</span>
-
-                    <button class="return-button">Return Book</button>
+                    <p class="author">James Clear</p>
+                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>22 Oct 2026</dd></div><div><dt>Due date</dt><dd>07 Nov 2026</dd></div></dl>
+                    <button type="button" class="return-button">Return book</button>
                 </div>
+            </article>
 
-            </div>
-
-            <!-- Book 3 -->
-            <div class="borrowed-card">
-
-                <img src="images/book3.jpg" alt="Book Cover">
-
+            <article class="borrowed-card">
+                <div class="borrowed-cover cover-purple" aria-hidden="true"><span>RICH DAD<br>POOR DAD</span></div>
                 <div class="borrowed-info">
+                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Finance</span></div>
                     <h2>Rich Dad Poor Dad</h2>
-                    <p>Author: Robert Kiyosaki</p>
-                    <p>Category: Finance</p>
-                    <p>Borrow Date: 25 Oct 2026</p>
-                    <p>Due Date: 10 Nov 2026</p>
-
-                    <span class="book-status">Borrowed</span>
-
-                    <button class="return-button">Return Book</button>
+                    <p class="author">Robert T. Kiyosaki</p>
+                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>25 Oct 2026</dd></div><div><dt>Due date</dt><dd>10 Nov 2026</dd></div></dl>
+                    <button type="button" class="return-button">Return book</button>
                 </div>
+            </article>
+        </section>
+    </main>
 
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Online Library. All Rights Reserved.</p>
+        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
     </footer>
-
 </body>
 
 </html>
-```

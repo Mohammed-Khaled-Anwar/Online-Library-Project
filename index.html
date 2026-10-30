@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online library</title>
+    <meta name="description" content="Welcome to the Online Library.">
+    <title>Home | Online Library</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-   <nav class="navbar">
 
-    <a href="index.html" class="brand">
-        <img src="images/book-logo-template_23-2149676836.avif" alt="Library Logo">
-        <span>Online Library</span>
-    </a>
+<body class="home-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand">
+                <img src="images/book-logo-template_23-2149676836.avif" alt="Online Library logo">
+                <span>Online Library</span>
+            </a>
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="Login.html">Login</a>
-        <a href="signUp.html">Sign Up</a>
-        <a href="Catalogue.html">Browse Books</a>
+            <div class="nav-links">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="Login.html">Login</a>
+                <a href="signUp.html">Sign Up</a>
+                <a href="Catalogue.html">Browse Books</a>
+            </div>
+        </nav>
+    </header>
 
-    </div>
+    <main class="home-main">
+        <section class="welcome-section" aria-labelledby="welcome-title">
+            <div>
+                <p class="eyebrow">YOUR DIGITAL READING SPACE</p>
+                <h1 id="welcome-title">Welcome to the Online Library</h1>
+                <p class="welcome-text">Find your next great read, explore our collection, and keep track of the books you borrow.</p>
+                <div class="home-actions">
+                    <a href="Catalogue.html" class="home-primary-button">Browse books</a>
+                    <a href="signUp.html" class="home-secondary-button">Create an account</a>
+                </div>
+            </div>
+            <div class="welcome-note">
+                <span class="note-icon" aria-hidden="true">▤</span>
+                <div>
+                    <strong>Read. Discover. Grow.</strong>
+                    <p>A simple place to manage your reading list.</p>
+                </div>
+            </div>
+        </section>
 
-</nav>
-    <div>
-        <h1>Welcome to the Online Library</h1>
-    </div>
+        <section class="home-features" aria-labelledby="features-title">
+            <div class="section-heading">
+                <p class="eyebrow">LIBRARY FEATURES</p>
+                <h2 id="features-title">Everything you need to read more</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>Browse the catalogue</h3>
+                    <p>Search books by title, author, category, or availability.</p>
+                    <a href="Catalogue.html">Explore books &rarr;</a>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>Borrow with ease</h3>
+                    <p>Open book details and borrow an available copy.</p>
+                    <a href="Catalogue.html">Find a book &rarr;</a>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Track your books</h3>
+                    <p>View your borrowed books and their due dates in one place.</p>
+                    <a href="borrowed_book.html">View borrowed books &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>

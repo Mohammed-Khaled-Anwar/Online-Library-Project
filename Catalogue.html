@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue</title>
+    <meta name="description" content="Browse and search the Online Library catalogue.">
+    <title>Book Catalogue | Online Library</title>
+    <link rel="stylesheet" href="css/Catalogue.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand">
+                <img src="images/book-logo-template_23-2149676836.avif" alt="Online Library logo">
+                <span>Online Library</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Catalogue.html" class="active" aria-current="page">Browse Books</a>
+                <a href="borrowed_book.html">My Borrowed Books</a>
+                <a href="Login.html">Login</a>
+                <a href="signUp.html" class="nav-signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalogue-hero">
+            <div>
+                <p class="eyebrow">DISCOVER YOUR NEXT READ</p>
+                <h1>Book Catalogue</h1>
+                <p class="hero-text">Explore our collection, find a book you love, and borrow it from the library.</p>
+            </div>
+            <div class="hero-stat" aria-label="Catalogue summary"><strong>128</strong><span>Books in catalogue</span></div>
+        </section>
+
+        <section class="catalogue-layout" aria-labelledby="search-heading">
+            <aside class="filter-panel">
+                <div class="panel-heading">
+                    <p class="eyebrow">REFINE RESULTS</p>
+                    <h2 id="search-heading">Find a book</h2>
+                </div>
+                <form class="search-form" action="Catalogue.html" method="get">
+                    <div class="form-group"><label for="book-search">Book title</label><input type="search" id="book-search" name="title" placeholder="e.g. The Great Gatsby"></div>
+                    <div class="form-group"><label for="author-search">Author</label><input type="search" id="author-search" name="author" placeholder="e.g. Jane Austen"></div>
+                    <div class="form-group"><label for="category-filter">Category</label><select id="category-filter" name="category"><option value="">All categories</option><option value="fiction">Fiction</option><option value="self-development">Self-development</option><option value="business">Business</option><option value="classic">Classic literature</option></select></div>
+                    <div class="form-group"><label for="availability-filter">Availability</label><select id="availability-filter" name="availability"><option value="">All books</option><option value="available">Available</option><option value="borrowed">Borrowed</option></select></div>
+                    <button type="submit" class="primary-button">Search catalogue</button>
+                    <a href="Catalogue.html" class="clear-link">Clear all filters</a>
+                </form>
+            </aside>
+
+            <section class="results-panel" aria-labelledby="results-heading">
+                <div class="results-header">
+                    <div><p class="eyebrow">LIBRARY COLLECTION</p><h2 id="results-heading">Featured books</h2></div>
+                    <span class="results-count">Showing 4 books</span>
+                </div>
+
+                <div class="book-grid">
+                    <article class="book-card"><div class="book-cover cover-blue" aria-hidden="true"><span>THE<br>GREAT<br>GATSBY</span></div><div class="book-content"><div class="book-card-topline"><span class="status available">Available</span><span class="category">Classic</span></div><h3>The Great Gatsby</h3><p class="author">F. Scott Fitzgerald</p><p class="description">A classic story of ambition, love, and the American dream in the Jazz Age.</p><div class="card-actions"><a href="book_details.html" class="details-link">View details</a><a href="borrowed_book.html" class="borrow-button">Borrow book</a></div></div></article>
+                    <article class="book-card"><div class="book-cover cover-gold" aria-hidden="true"><span>ATOMIC<br>HABITS</span></div><div class="book-content"><div class="book-card-topline"><span class="status borrowed">Borrowed</span><span class="category">Self-development</span></div><h3>Atomic Habits</h3><p class="author">James Clear</p><p class="description">A practical guide to building good habits and changing unhelpful routines.</p><div class="card-actions"><a href="book_details.html" class="details-link">View details</a><span class="borrow-button disabled" aria-disabled="true">Currently borrowed</span></div></div></article>
+                    <article class="book-card"><div class="book-cover cover-green" aria-hidden="true"><span>THE<br>ALCHEMIST</span></div><div class="book-content"><div class="book-card-topline"><span class="status available">Available</span><span class="category">Fiction</span></div><h3>The Alchemist</h3><p class="author">Paulo Coelho</p><p class="description">An inspiring journey about following a dream and listening to your heart.</p><div class="card-actions"><a href="book_details.html" class="details-link">View details</a><a href="borrowed_book.html" class="borrow-button">Borrow book</a></div></div></article>
+                    <article class="book-card"><div class="book-cover cover-purple" aria-hidden="true"><span>RICH DAD<br>POOR DAD</span></div><div class="book-content"><div class="book-card-topline"><span class="status available">Available</span><span class="category">Business</span></div><h3>Rich Dad Poor Dad</h3><p class="author">Robert T. Kiyosaki</p><p class="description">Lessons about money, investing, and building financial confidence.</p><div class="card-actions"><a href="book_details.html" class="details-link">View details</a><a href="borrowed_book.html" class="borrow-button">Borrow book</a></div></div></article>
+                </div>
+
+                <div class="empty-state" role="status"><div class="empty-icon" aria-hidden="true">⌕</div><div><h3>No books match your search</h3><p>Try a different title, author, category, or availability filter.</p></div><a href="Catalogue.html" class="secondary-button">View all books</a></div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer"><p>&copy; 2026 Online Library. Read more. Discover more.</p></footer>
 </body>
 </html>

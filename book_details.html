@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Details</title>
+    <meta name="description" content="View details and availability for a book in the Online Library.">
+    <title>Book Details | Online Library</title>
+    <link rel="stylesheet" href="css/book_details.css">
 </head>
+
 <body>
-    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand">
+                <img src="images/book-logo-template_23-2149676836.avif" alt="Online Library logo">
+                <span>Online Library</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Catalogue.html">Browse Books</a>
+                <a href="borrowed_book.html">My Borrowed Books</a>
+                <a href="Login.html">Login</a>
+                <a href="signUp.html" class="nav-signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="details-page">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="Catalogue.html">Book Catalogue</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Book Details</span>
+        </nav>
+
+        <section class="details-card" aria-labelledby="book-title">
+            <div class="details-cover cover-blue" aria-label="Decorative book cover for The Great Gatsby">
+                <span>THE<br>GREAT<br>GATSBY</span>
+                <small>F. SCOTT FITZGERALD</small>
+            </div>
+
+            <div class="details-content">
+                <div class="details-topline">
+                    <span class="status available">Available</span>
+                    <span class="book-id">Book ID: LIB-001</span>
+                </div>
+
+                <h1 id="book-title">The Great Gatsby</h1>
+                <p class="author">Written by F. Scott Fitzgerald</p>
+
+                <div class="book-meta" aria-label="Book information">
+                    <div><span>Category</span><strong>Classic literature</strong></div>
+                    <div><span>Availability</span><strong class="available-text">Available to borrow</strong></div>
+                </div>
+
+                <div class="description-section">
+                    <h2>About this book</h2>
+                    <p>Set in the summer of 1922, this classic novel follows Nick Carraway as he enters the world of wealthy Long Island and becomes drawn into Jay Gatsby's mysterious life and impossible love.</p>
+                </div>
+
+                <div class="action-panel">
+                    <div>
+                        <strong>Ready to start reading?</strong>
+                        <p>This copy is currently available in the library.</p>
+                    </div>
+                    <a href="borrowed_book.html" class="borrow-button">Borrow this book</a>
+                </div>
+
+                <div class="details-links">
+                    <a href="Catalogue.html">&larr; Back to catalogue</a>
+                    <a href="borrowed_book.html">View my borrowed books</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability-example" aria-labelledby="availability-example-title">
+            <div>
+                <p class="eyebrow">PROTOTYPE UI STATE</p>
+                <h2 id="availability-example-title">Unavailable book example</h2>
+                <p>When a book is already borrowed, its status is shown clearly and the borrow action is disabled.</p>
+            </div>
+            <div class="unavailable-action">
+                <span class="status borrowed">Borrowed</span>
+                <span class="disabled-button" aria-disabled="true">Borrow unavailable</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
