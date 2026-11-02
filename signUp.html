@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Online Library</title>
-    <link rel="stylesheet" href="css/authantication.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/authantication.css" />
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    
     <nav class="navbar">
 
         <a href="index.html" class="brand">
@@ -30,7 +31,7 @@
 
     </nav>
 
-    <!-- Sign Up Form -->
+    
     <div class="login-container">
 
         <div class="login-box">
@@ -42,39 +43,39 @@
             <form action="Login.html" method="get">
 
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your full name" required>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email" required>
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" placeholder="Create a password" required>
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
                 </div>
 
-                <!-- Account Type -->
+                
                 <div class="form-group">
 
-                    <label>Account Type</label>
+                    <label for="role-user">Account Type</label>
 
                     <div class="role-options">
 
-                        <label>
-                            <input type="radio" name="role" value="user" checked>
+                        <label for="role-user">
+                            <input type="radio" id="role-user" name="role" value="user" checked>
                             User
                         </label>
 
-                        <label>
-                            <input type="radio" name="role" value="admin">
+                        <label for="role-admin">
+                            <input type="radio" id="role-admin" name="role" value="admin">
                             Admin
                         </label>
 

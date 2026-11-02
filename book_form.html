@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add / Edit Book - Online Library</title>
-    <link rel="stylesheet" href="css/book_form.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/book_form.css" />
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    
     <nav class="navbar">
 
         <a href="admin.html" class="brand">
@@ -28,7 +29,7 @@
 
     </nav>
 
-    <!-- Book Form -->
+    
     <section class="book-form-container">
 
         <div class="book-form-box">
@@ -40,18 +41,18 @@
             <form action="admin.html" method="get">
 
                 <div class="form-group">
-                    <label>Book Title</label>
-                    <input type="text" placeholder="Enter book title" required>
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" name="title" placeholder="Enter book title" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Author</label>
-                    <input type="text" placeholder="Enter author name" required>
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author" name="author" placeholder="Enter author name" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Category</label>
-                    <select required>
+                    <label for="book-category">Category</label>
+                    <select id="book-category" name="category" required>
                         <option value="">Select Category</option>
                         <option>Fiction</option>
                         <option>Science</option>
@@ -63,13 +64,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Description</label>
-                    <textarea placeholder="Enter book description" rows="4" required></textarea>
+                    <label for="book-description">Description</label>
+                    <textarea id="book-description" name="description" placeholder="Enter book description" rows="4" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Book Status</label>
-                    <select required>
+                    <label for="book-status">Book Status</label>
+                    <select id="book-status" name="status" required>
                         <option value="Available">Available</option>
                         <option value="Borrowed">Borrowed</option>
                     </select>
@@ -89,7 +90,7 @@
 
     </section>
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <p>© 2026 Online Library. All Rights Reserved.</p>
     </footer>
