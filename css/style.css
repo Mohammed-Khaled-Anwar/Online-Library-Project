@@ -34,14 +34,15 @@ body {
 
 .navbar {
   min-height: 76px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 30px;
 }
 
 .brand {
-  display: inline-flex;
+  display: inline-grid;
+  grid-auto-flow: column;
   align-items: center;
   gap: 10px;
   color: #ffffff;
@@ -60,10 +61,11 @@ body {
 }
 
 .nav-links {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
   align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  justify-self: end;
   gap: 8px 22px;
 }
 
@@ -88,14 +90,16 @@ body {
   text-align: center;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
   .navbar {
-    align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 13px;
   }
 
   .nav-links {
-    justify-content: flex-start;
+    width: 100%;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+    justify-self: stretch;
   }
 }

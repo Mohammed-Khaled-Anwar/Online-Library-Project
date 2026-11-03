@@ -33,19 +33,17 @@
 }
 
 .home-actions {
-  display: flex;
-
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
   gap: 12px;
   margin-top: 24px;
 }
 
 .home-primary-button,
 .home-secondary-button {
-  display: inline-flex;
+  display: inline-grid;
   min-height: 42px;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 13px;
@@ -72,9 +70,9 @@
 }
 
 .welcome-note {
-  display: flex;
-
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: start;
   gap: 13px;
   padding: 19px;
   border: 1px solid #bfdbfe;
@@ -86,7 +84,6 @@
   display: grid;
   width: 36px;
   height: 36px;
-  flex: 0 0 36px;
   place-items: center;
   border-radius: 10px;
   background: var(--navy);
@@ -187,11 +184,3 @@
   }
 }
 
-@media (max-width: 760px) {
-  .navbar {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 13px;
-    padding: 15px 0 18px;
-  }
-}

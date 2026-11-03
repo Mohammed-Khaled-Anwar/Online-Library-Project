@@ -69,11 +69,10 @@
 
 .save-book-btn,
 .cancel-book-btn {
-  display: flex;
+  display: grid;
   width: 100%;
   min-height: 43px;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   border-radius: 8px;
   font: inherit;
   font-size: 13px;
@@ -106,9 +105,6 @@
 
 @media (max-width: 650px) {
   .navbar {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 13px;
     padding: 15px 14px 18px;
   }
 
