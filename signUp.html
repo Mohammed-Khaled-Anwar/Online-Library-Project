@@ -1,107 +1,117 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up - Online Library</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/authantication.css" />
-</head>
+  </head>
 
-<body>
-
-    
+  <body>
     <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img
+          src="images/book-logo-template_23-2149676836.avif"
+          alt="Library Logo"
+        />
+        <span>Online Library</span>
+      </a>
 
-        <a href="index.html" class="brand">
-            <img src="images/book-logo-template_23-2149676836.avif" alt="Library Logo">
-            <span>Online Library</span>
-        </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="signUp.html">Sign Up</a>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="Login.html">Login</a>
-            <a href="signUp.html">Sign Up</a>
-            
-            <a href="Catalogue.html">Browse Books</a>
-           
-        </div>
-
+        <a href="Catalogue.html">Browse Books</a>
+      </div>
     </nav>
 
-    
     <div class="login-container">
+      <div class="login-box">
+        <h1>Create Account</h1>
 
-        <div class="login-box">
+        <p>Join our library and discover your next favorite book.</p>
 
-            <h1>Create Account</h1>
+        <form action="Login.html" method="get">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full_name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
 
-            <p>Join our library and discover your next favorite book.</p>
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <input
+              type="email"
+              id="signup-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-            <form action="Login.html" method="get">
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+          </div>
 
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
-                </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
 
-                <div class="form-group">
-                    <label for="signup-email">Email Address</label>
-                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
-                </div>
+          <div class="form-group">
+            <label for="role-user">Account Type</label>
 
-                <div class="form-group">
-                    <label for="signup-password">Password</label>
-                    <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
-                </div>
+            <div class="role-options">
+              <label for="role-user">
+                <input
+                  type="radio"
+                  id="role-user"
+                  name="role"
+                  value="user"
+                  checked
+                />
+                User
+              </label>
 
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
-                </div>
-
-                
-                <div class="form-group">
-
-                    <label for="role-user">Account Type</label>
-
-                    <div class="role-options">
-
-                        <label for="role-user">
-                            <input type="radio" id="role-user" name="role" value="user" checked>
-                            User
-                        </label>
-
-                        <label for="role-admin">
-                            <input type="radio" id="role-admin" name="role" value="admin">
-                            Admin
-                        </label>
-
-                    </div>
-
-                </div>
-
-                <button type="submit" class="login-button">
-                    Create Account
-                </button>
-
-            </form>
-
-            <div class="register-link">
-                Already have an account?
-                <a href="Login.html">Login</a>
+              <label for="role-admin">
+                <input type="radio" id="role-admin" name="role" value="admin" />
+                Admin
+              </label>
             </div>
+          </div>
 
-            <div class="back-home">
-                <a href="index.html">Back to Home</a>
-            </div>
+          <button type="submit" class="login-button">Create Account</button>
+        </form>
 
+        <div class="register-link">
+          Already have an account?
+          <a href="Login.html">Login</a>
         </div>
 
+        <div class="back-home">
+          <a href="index.html">Back to Home</a>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,86 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View and manage your borrowed books.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View and manage your borrowed books." />
     <title>My Borrowed Books | Online Library</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/borrowed_book.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <nav class="navbar" aria-label="Primary navigation">
-            <a href="index.html" class="brand">
-                <img src="images/book-logo-template_23-2149676836.avif" alt="Online Library logo">
-                <span>Online Library</span>
-            </a>
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html" class="brand">
+          <img
+            src="images/book-logo-template_23-2149676836.avif"
+            alt="Online Library logo"
+          />
+          <span>Online Library</span>
+        </a>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="Login.html">Logout</a>
-                <a href="Catalogue.html">Browse Books</a>
-                <a href="borrowed_book.html" class="active" aria-current="page">My Borrowed Books</a>
-            </div>
-        </nav>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Login.html">Logout</a>
+          <a href="Catalogue.html">Browse Books</a>
+          <a href="borrowed_book.html" class="active" aria-current="page"
+            >My Borrowed Books</a
+          >
+        </div>
+      </nav>
     </header>
 
     <main class="borrowed-container">
-        <section class="borrowed-header">
-            <p class="eyebrow">YOUR READING LIST</p>
-            <h1>My Borrowed Books</h1>
-            <p>Keep track of the books you have borrowed and return them when you are finished.</p>
-        </section>
+      <section class="borrowed-header">
+        <p class="eyebrow">YOUR READING LIST</p>
+        <h1>My Borrowed Books</h1>
+        <p>
+          Keep track of the books you have borrowed and return them when you are
+          finished.
+        </p>
+      </section>
 
-        <section class="borrowed-count" aria-label="Borrowed books summary">
-            <div>
-                <span class="count-label">CURRENTLY BORROWED</span>
-                <strong>3 Books</strong>
+      <section class="borrowed-count" aria-label="Borrowed books summary">
+        <div>
+          <span class="count-label">CURRENTLY BORROWED</span>
+          <strong>3 Books</strong>
+        </div>
+        <a href="Catalogue.html" class="browse-link">Browse more books</a>
+      </section>
+
+      <section class="borrowed-grid" aria-label="Your borrowed books">
+        <article class="borrowed-card">
+          <div class="borrowed-cover cover-blue" aria-hidden="true">
+            <span>THE<br />GREAT<br />GATSBY</span>
+          </div>
+          <div class="borrowed-info">
+            <div class="book-card-topline">
+              <span class="book-status">Borrowed</span
+              ><span class="category">Fiction</span>
             </div>
-            <a href="Catalogue.html" class="browse-link">Browse more books</a>
-        </section>
+            <h2>The Great Gatsby</h2>
+            <p class="author">F. Scott Fitzgerald</p>
+            <dl class="book-dates">
+              <div>
+                <dt>Borrow date</dt>
+                <dd>20 Oct 2026</dd>
+              </div>
+              <div>
+                <dt>Due date</dt>
+                <dd>05 Nov 2026</dd>
+              </div>
+            </dl>
+            <button type="button" class="return-button">Return book</button>
+          </div>
+        </article>
 
-        <section class="borrowed-grid" aria-label="Your borrowed books">
-            <article class="borrowed-card">
-                <div class="borrowed-cover cover-blue" aria-hidden="true"><span>THE<br>GREAT<br>GATSBY</span></div>
-                <div class="borrowed-info">
-                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Fiction</span></div>
-                    <h2>The Great Gatsby</h2>
-                    <p class="author">F. Scott Fitzgerald</p>
-                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>20 Oct 2026</dd></div><div><dt>Due date</dt><dd>05 Nov 2026</dd></div></dl>
-                    <button type="button" class="return-button">Return book</button>
-                </div>
-            </article>
+        <article class="borrowed-card">
+          <div class="borrowed-cover cover-gold" aria-hidden="true">
+            <span>ATOMIC<br />HABITS</span>
+          </div>
+          <div class="borrowed-info">
+            <div class="book-card-topline">
+              <span class="book-status">Borrowed</span
+              ><span class="category">Self-development</span>
+            </div>
+            <h2>Atomic Habits</h2>
+            <p class="author">James Clear</p>
+            <dl class="book-dates">
+              <div>
+                <dt>Borrow date</dt>
+                <dd>22 Oct 2026</dd>
+              </div>
+              <div>
+                <dt>Due date</dt>
+                <dd>07 Nov 2026</dd>
+              </div>
+            </dl>
+            <button type="button" class="return-button">Return book</button>
+          </div>
+        </article>
 
-            <article class="borrowed-card">
-                <div class="borrowed-cover cover-gold" aria-hidden="true"><span>ATOMIC<br>HABITS</span></div>
-                <div class="borrowed-info">
-                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Self-development</span></div>
-                    <h2>Atomic Habits</h2>
-                    <p class="author">James Clear</p>
-                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>22 Oct 2026</dd></div><div><dt>Due date</dt><dd>07 Nov 2026</dd></div></dl>
-                    <button type="button" class="return-button">Return book</button>
-                </div>
-            </article>
-
-            <article class="borrowed-card">
-                <div class="borrowed-cover cover-purple" aria-hidden="true"><span>RICH DAD<br>POOR DAD</span></div>
-                <div class="borrowed-info">
-                    <div class="book-card-topline"><span class="book-status">Borrowed</span><span class="category">Finance</span></div>
-                    <h2>Rich Dad Poor Dad</h2>
-                    <p class="author">Robert T. Kiyosaki</p>
-                    <dl class="book-dates"><div><dt>Borrow date</dt><dd>25 Oct 2026</dd></div><div><dt>Due date</dt><dd>10 Nov 2026</dd></div></dl>
-                    <button type="button" class="return-button">Return book</button>
-                </div>
-            </article>
-        </section>
+        <article class="borrowed-card">
+          <div class="borrowed-cover cover-purple" aria-hidden="true">
+            <span>RICH DAD<br />POOR DAD</span>
+          </div>
+          <div class="borrowed-info">
+            <div class="book-card-topline">
+              <span class="book-status">Borrowed</span
+              ><span class="category">Finance</span>
+            </div>
+            <h2>Rich Dad Poor Dad</h2>
+            <p class="author">Robert T. Kiyosaki</p>
+            <dl class="book-dates">
+              <div>
+                <dt>Borrow date</dt>
+                <dd>25 Oct 2026</dd>
+              </div>
+              <div>
+                <dt>Due date</dt>
+                <dd>10 Nov 2026</dd>
+              </div>
+            </dl>
+            <button type="button" class="return-button">Return book</button>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
+      <p>&copy; 2026 Online Library. All Rights Reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>

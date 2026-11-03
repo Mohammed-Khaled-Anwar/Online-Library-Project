@@ -1,125 +1,123 @@
 .navbar {
-    width: 100%;
-    padding: 15px max(24px, calc((100% - 1240px) / 2));
-    background: var(--navy);
+  width: 100%;
+  padding: 15px max(24px, calc((100% - 1240px) / 2));
+  background: var(--navy);
 }
 
-
 .book-form-container {
-    width: min(680px, calc(100% - 48px));
-    margin: 0 auto;
-    padding: 58px 0 70px;
+  width: min(680px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 58px 0 70px;
 }
 
 .book-form-box {
-    padding: 34px;
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    background: var(--surface);
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
 }
 
 .book-form-box h1 {
-    color: var(--navy-dark);
-    font-size: 30px;
+  color: var(--navy-dark);
+  font-size: 30px;
 }
 
 .book-form-box > p {
-    margin: 9px 0 26px;
-    color: var(--muted);
+  margin: 9px 0 26px;
+  color: var(--muted);
 }
 
 .book-form-box .form-group {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .book-form-box label {
-    display: block;
-    margin-bottom: 7px;
-    color: var(--ink);
-    font-size: 13px;
-    font-weight: 700;
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .book-form-box input,
 .book-form-box select,
 .book-form-box textarea {
-    width: 100%;
-    min-height: 43px;
-    padding: 10px 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    background: #ffffff;
-    color: var(--ink);
-    font: inherit;
-    font-size: 13px;
-    outline: none;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  outline: none;
 }
 
 .book-form-box input:focus,
 .book-form-box select:focus,
 .book-form-box textarea:focus {
-    border-color: var(--blue);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.13);
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.13);
 }
 
 .book-form-box textarea {
-    min-height: 120px;
-    resize: vertical;
+  min-height: 120px;
+  resize: vertical;
 }
 
 .save-book-btn,
 .cancel-book-btn {
-    display: flex;
-    width: 100%;
-    min-height: 43px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font: inherit;
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
+  display: flex;
+  width: 100%;
+  min-height: 43px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .save-book-btn {
-    border: 0;
-    background: var(--navy);
-    color: #ffffff;
-    cursor: pointer;
+  border: 0;
+  background: var(--navy);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .save-book-btn:hover {
-    background: var(--blue);
+  background: var(--blue);
 }
 
 .cancel-book-btn {
-    margin-top: 11px;
-    border: 1px solid #cbd5e1;
-    background: #ffffff;
-    color: var(--muted);
+  margin-top: 11px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: var(--muted);
 }
 
 .cancel-book-btn:hover {
-    background: var(--blue-soft);
-    color: var(--blue);
+  background: var(--blue-soft);
+  color: var(--blue);
 }
 
 @media (max-width: 650px) {
-    .navbar {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 13px;
-        padding: 15px 14px 18px;
-    }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    padding: 15px 14px 18px;
+  }
 
-.book-form-container {
-        width: min(100% - 28px, 520px);
-        padding-top: 40px;
-    }
+  .book-form-container {
+    width: min(100% - 28px, 520px);
+    padding-top: 40px;
+  }
 
-    .book-form-box {
-        padding: 25px 20px;
-    }
+  .book-form-box {
+    padding: 25px 20px;
+  }
 }
-

@@ -1,193 +1,191 @@
 .navbar {
-    width: 100%;
-    padding: 15px max(24px, calc((100% - 1240px) / 2));
-    background: var(--navy);
+  width: 100%;
+  padding: 15px max(24px, calc((100% - 1240px) / 2));
+  background: var(--navy);
 }
 
-
 .admin-container {
-    width: min(1150px, calc(100% - 48px));
-    margin: 0 auto;
-    padding: 58px 0 70px;
+  width: min(1150px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 58px 0 70px;
 }
 
 .admin-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    gap: 15px;
-    margin-bottom: 32px;
+  gap: 15px;
+  margin-bottom: 32px;
 }
 
 .admin-header h1 {
-    color: var(--navy-dark);
-    font-size: 32px;
+  color: var(--navy-dark);
+  font-size: 32px;
 }
 
 .admin-header p {
-    margin-top: 7px;
-    color: var(--muted);
+  margin-top: 7px;
+  color: var(--muted);
 }
 
 .add-book-btn,
 .edit-btn,
 .delete-btn {
-    border-radius: 8px;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .add-book-btn {
-    padding: 11px 15px;
-    background: var(--navy);
-    color: #ffffff;
+  padding: 11px 15px;
+  background: var(--navy);
+  color: #ffffff;
 }
 
 .add-book-btn:hover {
-    background: var(--blue);
+  background: var(--blue);
 }
 
 .admin-stats {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
 }
 
 .stat-card,
 .admin-books {
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    background: var(--surface);
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
 }
 
 .stat-card {
-    padding: 22px;
+  padding: 22px;
 }
 
 .stat-card h3 {
-    color: var(--muted);
-    font-size: 13px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .stat-card p {
-    margin-top: 9px;
-    color: var(--navy-dark);
-    font-size: 30px;
-    font-weight: 700;
+  margin-top: 9px;
+  color: var(--navy-dark);
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .admin-books {
-    padding: 24px;
+  padding: 24px;
 }
 
 .admin-books h2 {
-    margin-bottom: 22px;
-    color: var(--navy-dark);
-    font-size: 22px;
+  margin-bottom: 22px;
+  color: var(--navy-dark);
+  font-size: 22px;
 }
 
 .table-container {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .admin-books table {
-    width: 100%;
-    min-width: 700px;
-    border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
 }
 
 .admin-books th,
 .admin-books td {
-    padding: 14px;
-    border-bottom: 1px solid var(--line);
-    text-align: left;
-    font-size: 13px;
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-size: 13px;
 }
 
 .admin-books th {
-    background: #f1f5f9;
-    color: var(--navy-dark);
-    font-size: 11px;
-    text-transform: uppercase;
+  background: #f1f5f9;
+  color: var(--navy-dark);
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 .admin-available,
 .admin-borrowed {
-    display: inline-flex;
-    padding: 4px 8px;
-    border-radius: 20px;
-    font-size: 10px;
-    font-weight: 700;
+  display: inline-flex;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .admin-available {
-    background: var(--green-soft);
-    color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
 }
 
 .admin-borrowed {
-    background: var(--red-soft);
-    color: var(--red);
+  background: var(--red-soft);
+  color: var(--red);
 }
 
 .edit-btn {
-    display: inline-block;
-    padding: 7px 10px;
-    background: var(--blue);
-    color: #ffffff;
+  display: inline-block;
+  padding: 7px 10px;
+  background: var(--blue);
+  color: #ffffff;
 }
 
 .edit-btn:hover {
-    background: var(--navy);
+  background: var(--navy);
 }
 
 .delete-btn {
-    padding: 7px 10px;
-    border: 0;
-    background: var(--red);
-    color: #ffffff;
-    cursor: pointer;
-    margin-left: 5px;
+  padding: 7px 10px;
+  border: 0;
+  background: var(--red);
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .delete-btn:hover {
-    background: #991b1b;
+  background: #991b1b;
 }
 
 @media (max-width: 800px) {
-    .navbar {
-        padding: 15px 24px;
-    }
+  .navbar {
+    padding: 15px 24px;
+  }
 
-.admin-stats {
-        grid-template-columns: 1fr;
-    }
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 650px) {
-    .navbar {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 13px;
-        padding: 15px 14px 18px;
-    }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    padding: 15px 14px 18px;
+  }
 
-.admin-container {
-        width: min(100% - 28px, 520px);
-        padding-top: 40px;
-    }
+  .admin-container {
+    width: min(100% - 28px, 520px);
+    padding-top: 40px;
+  }
 
-    .admin-header {
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  .admin-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-    .admin-books {
-        padding: 15px;
-    }
+  .admin-books {
+    padding: 15px;
+  }
 }
-
