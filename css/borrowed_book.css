@@ -200,36 +200,4 @@
   background: var(--blue-soft);
 }
 
-@media (max-width: 900px) {
-  .navbar {
-    padding: 15px 0;
-  }
 
-  .borrowed-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 650px) {
-  .navbar,
-  .borrowed-container {
-    width: min(100% - 28px, 520px);
-  }
-
-  .navbar {
-    padding: 15px 0 18px;
-  }
-
-  .borrowed-container {
-    padding-top: 40px;
-  }
-
-  .borrowed-count {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
-
-  .borrowed-grid {
-    grid-template-columns: 1fr;
-  }
-}

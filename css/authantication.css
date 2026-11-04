@@ -140,18 +140,3 @@
   min-height: auto;
 }
 
-@media (max-width: 650px) {
-  .navbar {
-    width: 100%;
-    padding: 15px 14px 18px;
-  }
-
-  .login-container {
-    min-height: calc(100vh - 132px);
-    padding: 35px 14px;
-  }
-
-  .login-box {
-    padding: 25px 20px;
-  }
-}

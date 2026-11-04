@@ -160,27 +160,4 @@
   text-decoration: underline;
 }
 
-@media (max-width: 760px) {
-  .home-main {
-    width: min(100% - 28px, 520px);
-    padding-top: 35px;
-  }
-
-  .welcome-section {
-    display: block;
-    padding-top: 25px;
-  }
-
-  .welcome-note {
-    margin-top: 28px;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-card p {
-    min-height: auto;
-  }
-}
 

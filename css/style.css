@@ -90,16 +90,3 @@ body {
   text-align: center;
 }
 
-@media (max-width: 850px) {
-  .navbar {
-    grid-template-columns: 1fr;
-    gap: 13px;
-  }
-
-  .nav-links {
-    width: 100%;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
-    justify-self: stretch;
-  }
-}

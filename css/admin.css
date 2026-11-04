@@ -158,32 +158,4 @@
   background: #991b1b;
 }
 
-@media (max-width: 800px) {
-  .navbar {
-    padding: 15px 24px;
-  }
 
-  .admin-stats {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 650px) {
-  .navbar {
-    padding: 15px 14px 18px;
-  }
-
-  .admin-container {
-    width: min(100% - 28px, 520px);
-    padding-top: 40px;
-  }
-
-  .admin-header {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
-
-  .admin-books {
-    padding: 15px;
-  }
-}

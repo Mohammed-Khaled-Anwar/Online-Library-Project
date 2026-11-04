@@ -103,17 +103,3 @@
   color: var(--blue);
 }
 
-@media (max-width: 650px) {
-  .navbar {
-    padding: 15px 14px 18px;
-  }
-
-  .book-form-container {
-    width: min(100% - 28px, 520px);
-    padding-top: 40px;
-  }
-
-  .book-form-box {
-    padding: 25px 20px;
-  }
-}
